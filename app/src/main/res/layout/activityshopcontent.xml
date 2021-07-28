@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_groupkala"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        />
+    <LinearLayout
+        android:id="@+id/linear_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+       android:layout_below="@id/recycler_groupkala"
+        android:background="@drawable/shapelinearbuyactivity"
+        android:orientation="horizontal"
+        android:elevation="15sp"
+        android:weightSum="3">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_jadidtarin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shaperecyclerkalaitempink"
+            android:text="@string/newss"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            tools:ignore="NestedWeights" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_arzantarin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shaperecyclerkalaitemgreen"
+            android:text="@string/arzan"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_gerantarin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shaperecyclerkalaitemgreen"
+            android:text="@string/geran"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            tools:ignore="NestedWeights" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerkala"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:elevation="10sp"
+        android:layout_margin="2dp"
+        android:layout_below="@id/linear_sort"
+        />
+</RelativeLayout>
+
+
+

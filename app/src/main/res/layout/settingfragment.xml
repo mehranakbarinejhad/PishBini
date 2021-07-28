@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="#FFF"
+    tools:ignore="RtlHardcoded">
+
+<FrameLayout
+    android:id="@+id/viewprofile_settingactivity"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/darkgradint"
+    android:elevation="10dp"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user_settingactivity"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+     android:layout_gravity="top|center"
+        tools:src="@drawable/girl"
+
+        android:layout_marginTop="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_changeprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/transparent"
+        android:text="@string/changeprofile"
+        android:textColor="#0E81B5"
+        android:textSize="18sp" />
+</FrameLayout>
+
+
+
+
+
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/layouttxtname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/viewprofile_settingactivity"
+    android:layoutDirection="rtl"
+    app:hintAnimationEnabled="true"
+    app:expandedHintEnabled="false"
+    android:hint="@string/name"
+    android:layout_marginTop="10dp"
+    app:boxBackgroundColor="#2196F3"
+    app:boxStrokeColor="#FD0404"
+    app:endIconTint="#40BCB0"
+
+
+
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_completename_settingactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/mehranakbarinejhad"
+        android:background="#FFF"
+        android:maxLines="1"
+        android:gravity="right"
+        android:textColor="#111"
+        android:textSize="16sp"
+        android:inputType="text"
+
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/layouttxtusername"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layouttxtname"
+    android:layoutDirection="rtl"
+    app:hintAnimationEnabled="true"
+    app:expandedHintEnabled="false"
+    android:hint="@string/username"
+    android:layout_marginTop="10dp"
+    app:boxBackgroundColor="#2196F3"
+    app:boxStrokeColor="#FD0404"
+    app:endIconTint="#40BCB0"
+
+
+
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_username_settingactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/mehranakbarinejhad"
+        android:background="#FFF"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:gravity="right"
+        android:inputType="text"
+        android:textColor="#111"
+        android:textSize="16sp"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/layouttxtpassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layouttxtusername"
+    android:layoutDirection="rtl"
+    app:hintAnimationEnabled="true"
+    app:expandedHintEnabled="false"
+    android:hint="@string/password"
+    android:layout_marginTop="10dp"
+    app:boxBackgroundColor="#2196F3"
+    app:boxStrokeColor="#FD0404"
+    app:endIconTint="#40BCB0"
+
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_password_settingactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/mehranakbarinejhad"
+        android:background="#FFF"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:gravity="right"
+        android:inputType="textPassword"
+        android:textColor="#111"
+        android:textSize="16sp"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/layouttxtphonenumbr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layouttxtpassword"
+    android:layoutDirection="rtl"
+    app:hintAnimationEnabled="true"
+    app:expandedHintEnabled="false"
+    android:hint="@string/phone_number"
+    android:layout_marginTop="10dp"
+    app:boxBackgroundColor="#2196F3"
+    app:boxStrokeColor="#FD0404"
+    app:endIconTint="#40BCB0"
+
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_phonenumber_settingactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/mehranakbarinejhad"
+        android:background="#FFF"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:gravity="right"
+        android:inputType="number"
+        android:textColor="#111"
+        android:textSize="16sp"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginprofile_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/logingradint"
+    tools:context=".view.RegisterActivity">
+    <ImageView
+        android:id="@+id/Viewlogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/armlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:contentDescription="@string/todo"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linearparent_registeractivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Viewlogo"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:weightSum="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="9"
+            android:background="@drawable/registerlinearshape"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="7"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="6"
+                tools:ignore="NestedWeights,UselessParent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_username_loginprofileactivity"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789_!@#$%^*-"
+                    style="@style/RegisterTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/username_english"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_name_loginprofileactivity"
+                    style="@style/RegisterTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    tools:ignore="NestedWeights" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_password_loginprofileactivity"
+                    style="@style/RegisterTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_confirm_loginprofileactivity"
+                    style="@style/RegisterTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/confirm"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_phonenumber_loginprofileactivity"
+                    style="@style/RegisterTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:elevation="5sp"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:hint="@string/phone_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_register_loginprofileactivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/loginbutton"
+                    android:fontFamily="@font/bmitrabold"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

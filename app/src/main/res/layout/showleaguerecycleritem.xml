@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_margin="5dp"
+    android:id="@+id/parent_group_topscore"
+    android:background="@drawable/shaperecyclerkalaitemblue"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/img_league_topscoreactivity"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_above="@id/txt_leaguename_showleagueadapter"
+
+        android:contentDescription="@string/todo"/>
+
+    <TextView
+        android:id="@+id/txt_leaguename_showleagueadapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        tools:text="بوندسلیگا"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

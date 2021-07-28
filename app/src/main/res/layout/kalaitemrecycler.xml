@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="230dp"
+    android:layout_gravity="center"
+   android:layout_margin="8dp"
+    android:elevation="20dp"
+    android:background="@drawable/shaperecyclerkalaitemred"
+    android:id="@+id/recyclerkalaparent"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/txt_titrkala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bmitra"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:text="@string/kafsh_juma" />
+
+    <TextView
+        android:id="@+id/txt_namekala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_titrkala"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/andalus"
+        tools:text="@string/juma_n51"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+         />
+
+
+
+    <ImageView
+        android:id="@+id/img_kala"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/txt_namekala"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/todo"
+        tools:src="@drawable/shoes" />
+
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_kala"
+       android:layout_centerInParent="true"
+
+        android:fontFamily="@font/calista"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:text="3,850,000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_kala"
+        android:layout_toStartOf="@id/txt_price"
+        android:fontFamily="@font/calista"
+        android:gravity="left"
+        android:text="@string/toman_en"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="60dp"
+android:orientation="horizontal"
+android:layout_margin="5dp"
+android:background="@drawable/rankinglistbackground"
+    >
+<FrameLayout
+    android:layout_width="70dp"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="@drawable/rankingshape_recyclerranking">
+    <TextView
+        android:id="@+id/rank_recyclerranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/_4"
+        android:fontFamily="@font/bernard"
+        android:textSize="21sp"
+        android:textColor="#FFF6F6"/>
+
+</FrameLayout>
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/image_recyclerranking"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="5dp"
+    android:src="@drawable/girl"/>
+<TextView
+    android:id="@+id/name_rankingrecyclerlist"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="17sp"
+    android:text="@string/mehran_akbari"
+    android:fontFamily="@font/andalus"
+    android:textColor="#FFFFFF"
+    android:layout_marginLeft="10dp"/>
+
+<TextView
+    android:id="@+id/score_recyclerranking"
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:fontFamily="@font/bernard"
+    android:layout_marginRight="5dp"
+    android:gravity="right|center"
+    android:text="@string/_2500"
+    android:textColor="#0E3EFF"
+    android:textSize="18sp" />
+</LinearLayout>

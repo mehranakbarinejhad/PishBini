@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Recovery_ActivityParent"
+    android:background="@drawable/logingradint"
+    tools:context=".view.RecoveryActivity"
+    android:layout_marginTop="-75dp"
+    >
+    <ImageView
+        android:id="@+id/logo_validateactivity"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/armlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:contentDescription="@string/todo"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_flag"
+        android:layout_width="45dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/iranflag"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/todo" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_countrycode"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/_98"
+        android:enabled="false"
+        android:fontFamily="@font/bmitrabold"
+        android:textColorHint="#C6CBD4"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/img_flag"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#5E6A7B"
+        android:layout_marginStart="5dp"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_phonenumber_recoveryactivity"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:maxLength="10"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/bmitrabold"
+        android:backgroundTint="#5E6A7B"
+        android:hint="@string/phone_number"
+        android:textColorHint="#C6CBD4"
+        android:singleLine="true"
+        android:textSize="24sp"
+        android:textColor="#F1EEEE"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/edt_countrycode"
+        android:layout_centerInParent="true"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next_RecoveryActivity"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="@string/_ok"
+        android:textSize="25sp"
+        android:fontFamily="@font/bmitrabold"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/loginbutton"
+        android:layout_below="@id/edt_phonenumber_recoveryactivity"
+        android:textColor="#FFF"/>
+
+
+
+
+
+</RelativeLayout>

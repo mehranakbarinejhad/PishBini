@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:background="@drawable/shapenewsrecycleritems"
+    android:layout_height="145dp"
+    tools:ignore="RtlHardcoded"
+    android:id="@+id/parentnewsrecycleritem">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        >
+        <TextView
+            android:id="@+id/txt_newstitr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FFF"
+            android:gravity="start"
+          android:layout_marginTop="1dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="1dp"
+            android:text="@string/titrnewstext"
+            android:fontFamily="@font/bmitrabold"
+             />
+   <TextView
+            android:id="@+id/txt_newsdescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+       android:layout_above="@id/txt_newsdate"
+            android:textSize="14sp"
+            android:textColor="#F8F6F6"
+            android:gravity="start"
+            android:layout_margin="4dp"
+       android:layout_below="@id/txt_newstitr"
+            android:text="@string/newsdescripyiontext"
+            android:fontFamily="@font/bmitrabold"
+            />
+  <TextView
+            android:id="@+id/txt_newsdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#F8F6F6"
+            android:gravity="start"
+            android:layout_margin="4dp"
+      android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+            tools:text="@string/newsdate"
+            android:fontFamily="@font/bmitrabold"
+      />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_newstitr"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_weight="1.2"
+        tools:src="@drawable/newsimage"
+        android:contentDescription="@string/todo"/>
+
+
+
+</LinearLayout>

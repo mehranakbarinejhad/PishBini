@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCD9D9"
+    tools:context=".view.SearchActivity">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview_kala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:focusable="true"
+        app:searchIcon="@drawable/ic_search"
+        android:layout_marginTop="5dp"
+        android:layoutDirection="rtl"
+
+
+
+        />
+    <View
+        android:id="@+id/linesearchactivity"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:elevation="20dp"
+        android:background="#111"
+        android:layout_below="@id/searchview_kala"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerkala_searchactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linesearchactivity"
+        android:layout_marginTop="2dp"
+        />
+
+
+
+
+</RelativeLayout>

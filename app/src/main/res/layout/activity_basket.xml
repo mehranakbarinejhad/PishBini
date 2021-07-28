@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.BasketActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_basketactivity"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="10dp"
+        android:background="#E6E5E5"
+        android:layout_alignParentTop="true"/>
+<TextView
+    android:id="@+id/txt_no_basket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_basketactivity"
+android:text="@string/nobasket"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:visibility="invisible"
+
+    />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_basketactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_basketactivity"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/txt_text_sumprice"
+        />
+
+    <TextView
+        android:id="@+id/txt_text_sumprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pricebye"
+        android:fontFamily="@font/bmitrabold"
+        android:textSize="20sp"
+        android:textColor="#111"
+        android:layout_above="@id/btn_complete_basketactivity"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="3dp"/>
+
+    <TextView
+        android:id="@+id/txt_text_toman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toman"
+        android:fontFamily="@font/bmitrabold"
+        android:textSize="20sp"
+        android:textColor="#111"
+        android:gravity="right"
+        android:layout_above="@id/btn_complete_basketactivity"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="3dp"/>
+    <TextView
+        android:id="@+id/txt_sumPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/price"
+        android:fontFamily="@font/bmitrabold"
+        android:textSize="20sp"
+        android:textColor="#111"
+        android:layout_above="@id/btn_complete_basketactivity"
+       android:layout_toEndOf="@id/txt_text_toman"
+        android:layout_toStartOf="@id/txt_text_sumprice"
+        android:gravity="start"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_complete_basketactivity"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shapebuttondetailsactivity"
+        android:layout_margin="5dp"
+        android:text="@string/completebye"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:fontFamily="@font/bmitrabold"
+        />
+
+
+</RelativeLayout>

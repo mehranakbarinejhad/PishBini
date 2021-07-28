@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/validateactivity_parent"
+    android:background="@drawable/logingradint"
+    tools:context=".view.ValidateCodeActivity"
+    android:layout_marginTop="-75dp"
+    >
+    <ImageView
+        android:id="@+id/logo_validateactivity"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/armlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:contentDescription="@string/todo"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_entercodetext_validateactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/bmitrabold"
+        android:textColor="#F1F0F0"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+
+        android:layout_centerInParent="true"
+        android:text="@string/sendcodetext"/>
+
+    <LinearLayout
+        android:id="@+id/liner_code_edittext_validateactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/txt_entercodetext_validateactivity">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_numberone_validateactivity"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            style="@style/myEditText"
+            android:layout_gravity="center"
+            android:backgroundTint="#AAB3BE"
+            android:backgroundTintMode="add"
+
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_numbertwo_validateactivity"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            style="@style/myEditText"
+            android:backgroundTint="#AAB3BE"
+            android:backgroundTintMode="add"
+            android:layout_marginStart="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_numberthree_validateactivity"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            style="@style/myEditText"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#AAB3BE" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_numberfor_validateactivity"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            style="@style/myEditText"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#AAB3BE" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_numberfive_validateactivity"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            style="@style/myEditText"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#AAB3BE" />
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next_validateactivity"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="@string/_ok"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/bmitrabold"
+        android:background="@drawable/loginbutton"
+        android:layout_below="@id/liner_code_edittext_validateactivity"
+        android:textColor="#FFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bmitrabold"
+        android:textSize="17sp"
+        android:textColor="#EFF1F3"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/did_not_the_code"
+        android:layout_below="@id/btn_next_validateactivity"/>
+    <TextView
+        android:id="@+id/txt_resendcodeclick_validateactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bmitrabold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/btn_next_validateactivity"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#03A9F4"
+        android:text="@string/resend_code"/>
+
+
+    <TextView
+        android:id="@+id/txt_loginaccounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="@font/bmitrabold"
+        android:textColor="#ECECED"
+        android:layout_marginTop="10dp"
+        android:text="@string/do_have_an_account"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_loginclick_validateactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@id/txt_loginaccounttext"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/login"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/bmitrabold"
+        android:textColor="#03A9F4"
+        android:textSize="20sp" />
+
+</RelativeLayout>

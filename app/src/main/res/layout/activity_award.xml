@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AwardActivity"
+    android:background="#3F51B5">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.2"
+
+
+    >
+<TextView
+    android:id="@+id/txt_award"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    tools:text="@string/_10"
+    android:textSize="30sp"
+    android:gravity="center|bottom"
+    android:layout_gravity="center|bottom"
+    android:textStyle="bold|italic"
+    android:textColor="#F83E3E"
+    android:shadowColor="#FFF"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:shadowRadius="2"
+    />
+
+</FrameLayout>
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.8"
+    android:orientation="horizontal"
+
+    >
+  <com.airbnb.lottie.LottieAnimationView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:lottie_fileName="trophy.json"
+      app:lottie_autoPlay="true"
+      app:lottie_loop="true"
+      />
+</LinearLayout>
+
+</LinearLayout>

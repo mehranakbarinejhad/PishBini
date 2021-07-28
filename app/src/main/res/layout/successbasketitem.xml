@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="RtlHardcoded">
+    <LinearLayout
+android:id="@+id/linear_parent_suceessbuyactivity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layoutDirection="rtl"
+        >
+        <TextView
+            android:id="@+id/txt_codepeygiri_successbuyactivity1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="@string/codepeygiri2"
+            android:layout_marginRight="2dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/bmitrabold"
+            />
+        <TextView
+            android:id="@+id/txt_namekala_successbuyactivity1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/namekala"
+            android:fontFamily="@font/bmitrabold"
+            android:layout_marginRight="2dp"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/txt_tedad_successbuyactivity1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/tedad"
+            android:layout_marginRight="2dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/bmitrabold"
+            />
+        <TextView
+            android:id="@+id/txt_gimat_successbuyactivity1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/gimat"
+            android:layout_marginRight="2dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/bmitrabold"
+            />
+        <TextView
+            android:id="@+id/txt_sum_successbuyactivity1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/sum"
+            android:layout_marginRight="2dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/bmitrabold"
+            />
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/linear_parent_suceessbuyactivity1"
+        android:background="#589ED6"/>
+</RelativeLayout>

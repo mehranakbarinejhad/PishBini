@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/nointernetconnection"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="30sp"
+    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_retrycpnnect"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shapebuttondetailsactivity"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:text="@string/retryconnect"
+        android:textSize="22sp"
+        android:textColor="#FFF"/>
+
+</FrameLayout>

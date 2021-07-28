@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="250dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:background="@drawable/backgroundrecycleritemsearchactivity"
+    android:elevation="20sp"
+    android:id="@+id/parent_recyclersearchactivity"
+    >
+    <ImageView
+        android:id="@+id/img_kala_searchactivity"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/kafsh"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txt_titrkala_searchactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_kala_searchactivity"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/bmitrabold"
+        android:gravity="center"
+
+        android:text="@string/kafsh_juma"
+        android:textColor="#1B1B1B"
+        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/txt_name_searchactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txt_titrkala_searchactivity"
+            android:text="@string/airmax_2010_iran"
+            android:gravity="start"
+            android:fontFamily="@font/andalus"
+            android:textColor="#4C4A4A"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/txt_price_searchactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/_4_300_000"
+            android:gravity="center"
+            android:fontFamily="@font/gigi"
+            android:textColor="#238349"
+
+
+
+        android:layout_marginBottom="10dp"
+            android:textSize="23sp"/>
+
+
+</RelativeLayout>

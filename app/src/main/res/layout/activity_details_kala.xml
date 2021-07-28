@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#F9F6F6"
+    tools:context=".view.DetailsKalaActivity"
+    tools:ignore="RelativeOverlap,RtlHardcoded"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+
+      >
+        <ImageView
+            android:id="@+id/img_kala_details_activity"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            tools:src="@drawable/kafsh"
+            android:elevation="10sp"
+            android:contentDescription="@string/todo" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/txt_titr_details_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        tools:text="@string/kafsh_juma"
+        android:fontFamily="@font/bmitrabold"
+        android:gravity="center"
+        android:paddingRight="5sp"
+        android:textColor="#111"
+        android:textSize="20sp"
+      android:layout_gravity="center"
+        android:layout_margin="5dp"
+        tools:ignore="RtlSymmetry" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/txt_toman"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/toman"
+            android:textColor="#111"
+            android:textSize="20sp"
+            android:fontFamily="@font/bmitrabold"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="2dp"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_price_details_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+
+            android:layout_toEndOf="@id/txt_toman"
+            android:fontFamily="@font/bmitrabold"
+            android:gravity="left|center"
+            android:textColor="#111"
+            android:textSize="20sp"
+            tools:text="@string/price" />
+
+<TextView
+    android:id="@+id/txt_textsize"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/size_t"
+    android:textColor="#111"
+    android:fontFamily="@font/bmitra"
+    android:textSize="20sp"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="10dp"
+    />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinersize"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            android:gravity="right|center"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="30dp"
+         android:layout_toStartOf="@id/txt_textsize"
+            android:layout_marginRight="2dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.7"
+        android:weightSum="3.1"
+        android:layout_margin="5dp"
+        android:background="@drawable/shapelinearlayoutdescriptiondetails"
+        android:orientation="vertical">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout_detailsactivity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/shapetablayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            app:tabGravity="fill"
+            tools:ignore="NestedWeights"
+            app:tabSelectedTextColor="#FF0000"
+
+            >
+
+
+
+
+        </com.google.android.material.tabs.TabLayout>
+        <TextView
+            android:id="@+id/txt_details_detailsactivity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            tools:text="@string/detailskala"
+            android:fontFamily="@font/bmitra"
+            android:gravity="top|right"
+            android:paddingRight="5sp"
+            android:textColor="#4B4949"
+            android:scrollbars="vertical"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_addtobasket"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shapebuttondetailsactivity"
+        android:text="@string/Add_basket_text"
+        android:textColor="#FFF"
+        android:elevation="20sp"
+        android:gravity="center"
+
+        android:drawableEnd="@drawable/ic_add_detailsactivity"
+        android:textSize="23sp"/>
+
+
+</LinearLayout>

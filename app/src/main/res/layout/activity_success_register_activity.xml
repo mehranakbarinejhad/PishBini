@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginprofile_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logingradint"
+
+    tools:context=".view.SuccessRegisterActivityActivity">
+    <ImageView
+        android:id="@+id/Viewlogo_successactivity"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/armlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:contentDescription="@string/todo"
+        />
+
+    <TextView
+        android:id="@+id/txt_successtext_successactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/bmitrabold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/registration_completed_successfully"
+        android:textColor="#FFFFFF"
+
+        android:textSize="22sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_success_successactivity"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/txt_successtext_successactivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/success" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_gotologinactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbutton"
+        android:text="@string/login"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+
+
+</RelativeLayout>

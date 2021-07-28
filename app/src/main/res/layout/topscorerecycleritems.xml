@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent_topscore"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shaperecyclerkalaitemorange"
+    android:layout_height="85dp"
+    android:layout_margin="5dp"
+    android:elevation="2sp"
+    tools:ignore="RtlHardcoded">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/img_player_topscores"
+    android:layout_width="80dp"
+    android:layout_margin="5dp"
+    android:layout_alignParentLeft="true"
+    android:layout_height="80dp"
+   />
+    <TextView
+        android:id="@+id/name_player_topscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_player_topscores"
+        android:layout_marginLeft="5dp"
+        android:text="@string/cristiano_ronalod"
+        android:textSize="22sp"
+        android:textColor="#E8E6E6"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/goals_player_topscore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_player_topscores"
+        android:layout_marginLeft="5dp"
+        tools:text="@string/_29"
+        android:textSize="30sp"
+        android:layout_below="@id/name_player_topscore"
+        android:textColor="#F3EFEF"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:id="@+id/img_teamlogo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/todo"/>
+
+</RelativeLayout>

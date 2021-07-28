@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnu_searchactivity"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/searchview"
+        app:showAsAction="always"
+
+
+        />
+    <item
+        android:id="@+id/mnu_show_basket"
+        android:icon="@drawable/ic_basket"
+        android:title="@string/mybasket"
+        app:showAsAction="ifRoom" />
+
+
+
+
+</menu>

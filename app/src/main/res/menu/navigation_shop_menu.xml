@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/mnu_setting_nav"
+            android:title="@string/fa_setting"
+            />
+    </group>
+<group>
+    <item android:id="@+id/mnu_basket_nav"
+        android:title="@string/mybasket"
+        />
+    <item android:id="@+id/mnu_mybuy_nav"
+        android:title="@string/mybuy"
+        />
+</group>
+
+      <item android:id="@+id/mnu_chat_adminshop_nav"
+    android:title="@string/chat_with_admin"
+    />
+
+</menu>

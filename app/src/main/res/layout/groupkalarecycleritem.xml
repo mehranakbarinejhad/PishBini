@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    android:id="@+id/groupkala_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="90dp"
+    android:background="@drawable/shaperecyclerkalaitempink"
+    android:layout_margin="5dp"
+    >
+    <View
+        android:id="@+id/view_imageshape"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/viewimageshapegroupnotselected"
+
+        />
+    <ImageView
+        android:id="@+id/img_group"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hat"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/todo" />
+    <TextView
+        android:id="@+id/txt_namegroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/badansazi"
+        android:textSize="17sp"
+
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/bmitra"
+        android:layout_below="@id/view_imageshape"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

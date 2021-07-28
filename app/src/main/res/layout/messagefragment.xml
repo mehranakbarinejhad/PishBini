@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/messageshape"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+
+
+    >
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/fa_message"
+        android:fontFamily="@font/bmitra"
+        android:textSize="19sp"
+        android:textColor="#111"
+       android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#434242"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_message_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_ok"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/bmitrabold"
+      android:layout_gravity="bottom"/>
+
+</LinearLayout>
+

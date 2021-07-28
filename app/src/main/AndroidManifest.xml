@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.liyanamarket.predictlive"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".view.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PredictLive"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".AwardActivity"
+            android:exported="true"
+            android:theme="@style/AwardActivity"/>
+        <activity
+            android:name=".ListBuyActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".view.TopScoresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.TopScorePlayerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.BuySuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/successbuyactivity" />
+        <activity
+            android:name=".view.BuyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopStyle" />
+        <activity
+            android:name=".view.BasketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.DetailsKalaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/detailsactivitystyle" />
+        <activity
+            android:name=".view.ResultRecoveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ValidateCodeRecoveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopStyle" />
+        <activity
+            android:name=".view.ShopActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopStyle" />
+        <activity
+            android:name=".view.SuccessRegisterActivityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ValidateCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.NumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.RecoveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PredictActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivity" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
